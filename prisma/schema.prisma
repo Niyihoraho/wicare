@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum BookingStatus {
+  PENDING
+  DONE
+  FAIL
+  CANCELLED
+}
+
+model AvailableSlot {
+  id        String   @id @default(cuid())
+  date      String
+  time      String
+  createdAt DateTime @default(now())
+
+  @@map("available_slots")
+}
+
+model Booking {
+  id          String        @id @default(cuid())
+  slotId      String
+  date        String
+  time        String
+  userName    String
+  userEmail   String        @default("")
+  userPhone   String
+  sessionType String
+  status      BookingStatus @default(PENDING)
+  createdAt   DateTime      @default(now())
+
+  @@map("bookings")
+}
+
+model BlogPost {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  title     String
+  excerpt   String
+  content   String[]
+  author    String
+  date      String
+  readTime  String
+  category  String
+  image     String
+  createdAt DateTime @default(now())
+
+  @@map("blog_posts")
+}
+
+model Video {
+  id          String   @id @default(cuid())
+  title       String
+  description String
+  thumbnail   String
+  videoUrl    String?
+  duration    String
+  createdAt   DateTime @default(now())
+
+  @@map("videos")
+}
