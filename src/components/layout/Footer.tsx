@@ -12,7 +12,7 @@ export function Footer() {
             <AdminLoginModal />
           </div>
           <p className="text-white/40 text-xs">
-            © {new Date().getFullYear()} WiCare NeurOptimal® Center. All rights
+            © {new Date().getFullYear()} WiCare NeurOptimal Center. All rights
             reserved.
           </p>
           {/* Social Media Links */}
@@ -34,7 +34,7 @@ export function Footer() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <p className="text-white/30 text-[10px] text-center max-w-3xl mx-auto leading-relaxed">
-          Disclaimer: NeurOptimal® is a training tool and does not diagnose,
+          Disclaimer: NeurOptimal is a training tool and does not diagnose,
           treat, mitigate or cure any disease, disorder or abnormal physical
           state, nor does it restore, modify or correct the body&apos;s structure
           or functioning. If you require medical assistance, please seek the

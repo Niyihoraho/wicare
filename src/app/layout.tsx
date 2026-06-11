@@ -21,11 +21,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "WiCare NeurOptimal® Center | Kigali, Rwanda",
-    template: "%s | WiCare NeurOptimal® Center",
+    default: "WiCare NeurOptimal Center | Kigali, Rwanda",
+    template: "%s | WiCare NeurOptimal Center",
   },
   description:
-    "Rwanda's first NeurOptimal® neurofeedback center. Optimizing mind, enhancing performance, and elevating wellbeing through science-based, non-invasive brain training.",
+    "Rwanda's first NeurOptimal neurofeedback center. Optimizing mind, enhancing performance, and elevating wellbeing through science-based, non-invasive brain training.",
   keywords: [
     "NeurOptimal",
     "neurofeedback",

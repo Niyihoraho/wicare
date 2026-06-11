@@ -44,7 +44,7 @@ export function Navbar({ isAdmin }: { isAdmin?: boolean }) {
                   WI CARE
                 </span>
                 <span className="text-[10px] sm:text-xs tracking-[0.15em] uppercase leading-none text-brand-gold">
-                  NeurOptimal™ Center
+                  NeurOptimal
                 </span>
               </div>
             </Link>

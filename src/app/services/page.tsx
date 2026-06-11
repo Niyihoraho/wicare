@@ -87,7 +87,7 @@ const cardVariants: any = {
 const coreServices = [
   {
     icon: <Brain className="w-6 h-6" />,
-    title: "NeurOptimal® Neurofeedback",
+    title: "NeurOptimal Neurofeedback",
     description:
       "Our core offering. A non-invasive, dynamical brain training system that helps your brain self-organize, improving mental flexibility, resilience, and overall cognitive function.",
     tag: "Core",
@@ -141,7 +141,7 @@ const howItWorks = [
     step: "02",
     title: "Train & Relax",
     description:
-      "Sit back, listen to music, and let the NeurOptimal® system do the work. Sensors read your brainwaves while dynamical feedback gently guides your brain toward optimal function.",
+      "Sit back, listen to music, and let the NeurOptimal system do the work. Sensors read your brainwaves while dynamical feedback gently guides your brain toward optimal function.",
     icon: <Shield className="w-5 h-5" />,
   },
   {
@@ -191,7 +191,7 @@ export default function ServicesPage() {
         titleAccent="Services"
         subtitle="Comprehensive brain optimization and mental wellness solutions tailored for individuals, families, and organizations in Rwanda."
         primaryCTA={{ label: "Book a Free Session", href: "/book-session" }}
-        secondaryCTA={{ label: "Discover NeurOptimal®", href: "/neurofeedback" }}
+        secondaryCTA={{ label: "Discover NeurOptimal", href: "/neurofeedback" }}
         backgroundImage="/services-hero.png"
       />
 
@@ -383,7 +383,7 @@ export default function ServicesPage() {
                   href="/neurofeedback"
                   className="inline-flex items-center gap-2 text-brand-gold font-semibold hover:gap-3 transition-all duration-300 mt-2"
                 >
-                  Learn about NeurOptimal®
+                  Learn about NeurOptimal
                   <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
@@ -403,7 +403,7 @@ export default function ServicesPage() {
                     {[
                       {
                         title: "State-of-the-Art Technology",
-                        desc: "We use the latest NeurOptimal® version 3.0 systems, the most advanced dynamical neurofeedback available globally.",
+                        desc: "We use the latest NeurOptimal version 3.0 systems, the most advanced dynamical neurofeedback available globally.",
                       },
                       {
                         title: "Expert Guidance",

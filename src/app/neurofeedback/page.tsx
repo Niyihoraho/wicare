@@ -112,9 +112,9 @@ export default function NeurofeedbackPage() {
         "There is no set number — every brain is unique. Many people notice shifts after just a few sessions, while others prefer ongoing training for continued optimization. We recommend starting with a block of 10 sessions to give your brain the best opportunity to begin its self-organization process. Your trainer will help guide you based on your personal goals.",
     },
     {
-      question: "Is NeurOptimal® safe for children?",
+      question: "Is NeurOptimal safe for children?",
       answer:
-        "Absolutely. NeurOptimal® is used with people of all ages, from toddlers to the elderly. Because it is completely non-invasive and non-directive — it doesn't tell the brain what to do — there are no age restrictions. Children often respond remarkably well, and many parents notice improvements in focus, emotional regulation, and sleep.",
+        "Absolutely. NeurOptimal is used with people of all ages, from toddlers to the elderly. Because it is completely non-invasive and non-directive — it doesn't tell the brain what to do — there are no age restrictions. Children often respond remarkably well, and many parents notice improvements in focus, emotional regulation, and sleep.",
     },
     {
       question: "What does a session feel like?",
@@ -122,24 +122,24 @@ export default function NeurofeedbackPage() {
         "Most people describe sessions as deeply relaxing. You simply sit comfortably, listen to music or watch a video, and let the system do its work. You may notice brief micro-pauses in the music — these are the feedback signals that help your brain self-organize. Many clients feel calmer, clearer, and more centered after a session.",
     },
     {
-      question: "How is NeurOptimal® different from other neurofeedback?",
+      question: "How is NeurOptimal different from other neurofeedback?",
       answer:
-        "Unlike conventional (linear) neurofeedback that requires a diagnosis and tells the brain what to do, NeurOptimal® is dynamical and non-directive. It uses advanced mathematical processing to simply mirror the brain's activity back to itself, allowing natural self-organization. There's no diagnosis, no protocol, and no conscious effort required from the client.",
+        "Unlike conventional (linear) neurofeedback that requires a diagnosis and tells the brain what to do, NeurOptimal is dynamical and non-directive. It uses advanced mathematical processing to simply mirror the brain's activity back to itself, allowing natural self-organization. There's no diagnosis, no protocol, and no conscious effort required from the client.",
     },
     {
       question: "Are there any side effects?",
       answer:
-        "NeurOptimal® is remarkably free of side effects because it doesn't push the brain in any direction. It simply provides information that allows the brain to self-organize at its own pace. Occasionally, some people may feel a bit tired after their first session as the brain processes the training, but this is rare and temporary.",
+        "NeurOptimal is remarkably free of side effects because it doesn't push the brain in any direction. It simply provides information that allows the brain to self-organize at its own pace. Occasionally, some people may feel a bit tired after their first session as the brain processes the training, but this is rare and temporary.",
     },
     {
-      question: "Do I need a diagnosis to use NeurOptimal®?",
+      question: "Do I need a diagnosis to use NeurOptimal?",
       answer:
-        "No. NeurOptimal® is a training tool, not a medical treatment. No diagnosis is needed. Whether you're dealing with stress, seeking peak performance, or simply want to optimize your brain function, NeurOptimal® works by helping your brain become more flexible and resilient — regardless of the starting point.",
+        "No. NeurOptimal is a training tool, not a medical treatment. No diagnosis is needed. Whether you're dealing with stress, seeking peak performance, or simply want to optimize your brain function, NeurOptimal works by helping your brain become more flexible and resilient — regardless of the starting point.",
     },
     {
-      question: "Can I use NeurOptimal® alongside other treatments?",
+      question: "Can I use NeurOptimal alongside other treatments?",
       answer:
-        "Yes. Because NeurOptimal® is non-invasive and doesn't interfere with other therapies or medications, it can be used as a complement to any existing treatment plan. Many healthcare professionals recommend it as an adjunct to therapy, coaching, or wellness programs.",
+        "Yes. Because NeurOptimal is non-invasive and doesn't interfere with other therapies or medications, it can be used as a complement to any existing treatment plan. Many healthcare professionals recommend it as an adjunct to therapy, coaching, or wellness programs.",
     },
   ];
 
@@ -148,7 +148,7 @@ export default function NeurofeedbackPage() {
       {/* Hero */}
       <PageHero
         title="Discover"
-        titleAccent="NeurOptimal®"
+        titleAccent="NeurOptimal"
         subtitle="Advanced dynamical neurofeedback — a natural mirror for your brain. Non-invasive, drug-free, and effortless brain training technology trusted by millions of client hours worldwide."
         primaryCTA={{ label: "Book Intro Session", href: "/book-session" }}
         secondaryCTA={{
@@ -183,10 +183,10 @@ export default function NeurofeedbackPage() {
                   <span className="text-brand-gold">Your Brain</span>
                 </h2>
                 <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-                  NeurOptimal® is an advanced, dynamical neurofeedback system developed by Zengar Institute. Think of it as a &ldquo;defrag&rdquo; for your brain — it acts as a mirror, providing real-time mathematical feedback that helps your brain release points of &ldquo;stuckness,&rdquo; self-organize, and function at its natural best.
+                  NeurOptimal is an advanced, dynamical neurofeedback system developed by Zengar Institute. Think of it as a &ldquo;defrag&rdquo; for your brain — it acts as a mirror, providing real-time mathematical feedback that helps your brain release points of &ldquo;stuckness,&rdquo; self-organize, and function at its natural best.
                 </p>
                 <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-                  Unlike conventional approaches that diagnose and try to &ldquo;fix&rdquo; specific conditions, NeurOptimal® is <strong className="text-white/80">non-directive</strong> — it doesn&apos;t tell your brain what to do. Instead, it simply gives your brain information about itself, and your brain does the rest. The result? Natural, effortless optimization.
+                  Unlike conventional approaches that diagnose and try to &ldquo;fix&rdquo; specific conditions, NeurOptimal is <strong className="text-white/80">non-directive</strong> — it doesn&apos;t tell your brain what to do. Instead, it simply gives your brain information about itself, and your brain does the rest. The result? Natural, effortless optimization.
                 </p>
               </div>
 
@@ -291,7 +291,7 @@ export default function NeurofeedbackPage() {
               <span className="text-brand-gold">Works</span>
             </h2>
             <p className="text-lg text-brand-navy/60 leading-relaxed mt-5">
-              A NeurOptimal® session is one of the most effortless experiences
+              A NeurOptimal session is one of the most effortless experiences
               you&apos;ll ever have. Here&apos;s what to expect during your visit.
             </p>
           </div>
@@ -451,7 +451,7 @@ export default function NeurofeedbackPage() {
                   <span className="text-brand-gold">Non-Directive.</span>
                 </h2>
                 <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-                  NeurOptimal® represents a paradigm shift in neurofeedback. While conventional systems use static or dynamic thresholds that tell the brain what to do, NeurOptimal® uses <strong className="text-white/80">dynamical thresholds</strong> that adjust themselves microsecond by microsecond, creating an intimate dance with the brain.
+                  NeurOptimal represents a paradigm shift in neurofeedback. While conventional systems use static or dynamic thresholds that tell the brain what to do, NeurOptimal uses <strong className="text-white/80">dynamical thresholds</strong> that adjust themselves microsecond by microsecond, creating an intimate dance with the brain.
                 </p>
                 <p className="text-base sm:text-lg text-white/60 leading-relaxed">
                   This dynamical process allows the brain to release its &ldquo;points of stuckness&rdquo; — the same-old patterns of feelings and behavior that are so difficult to change through conscious effort. The brain doesn&apos;t need to be told what to do; it simply needs accurate information about itself.
@@ -466,7 +466,7 @@ export default function NeurofeedbackPage() {
                   icon: <Eye className="w-5 h-5 text-brand-gold" />,
                   title: "Dynamical Thresholds",
                   description:
-                    "Unlike static goal-setting or periodic dynamic adjustments, NeurOptimal®'s thresholds interact with the brain in real-time — adjusting microsecond by microsecond to create an astounding self-organizing effect.",
+                    "Unlike static goal-setting or periodic dynamic adjustments, NeurOptimal's thresholds interact with the brain in real-time — adjusting microsecond by microsecond to create an astounding self-organizing effect.",
                 },
                 {
                   icon: <RefreshCcw className="w-5 h-5 text-brand-gold" />,
@@ -521,7 +521,7 @@ export default function NeurofeedbackPage() {
               <span className="text-brand-gold">Questions</span>
             </h2>
             <p className="text-lg text-brand-navy/60 leading-relaxed mt-5">
-              Everything you need to know about NeurOptimal® neurofeedback
+              Everything you need to know about NeurOptimal neurofeedback
               training at WiCare.
             </p>
           </div>
@@ -543,7 +543,7 @@ export default function NeurofeedbackPage() {
       {/* CTA Section */}
       <CTASection
         heading="Experience It Yourself"
-        description="The best way to understand NeurOptimal® is to experience it. Book your free introductory session and discover what effortless brain optimization feels like."
+        description="The best way to understand NeurOptimal is to experience it. Book your free introductory session and discover what effortless brain optimization feels like."
       />
     </>
   );

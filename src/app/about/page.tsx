@@ -143,7 +143,7 @@ export default function AboutPage() {
         titleAccent="in Rwanda."
         subtitle="WiCare NeurOptimal Center is Rwanda's first dedicated neurofeedback center — a sanctuary for brain optimization, mental wellness, and personal transformation in the heart of Kigali."
         primaryCTA={{ label: "Book Intro Session", href: "/book-session" }}
-        secondaryCTA={{ label: "Explore NeurOptimal®", href: "/neurofeedback" }}
+        secondaryCTA={{ label: "Explore NeurOptimal", href: "/neurofeedback" }}
         backgroundImage="/wicare-peace.png"
       />
 
@@ -175,7 +175,7 @@ export default function AboutPage() {
                   WiCare NeurOptimal Center was born from a bold vision: to bring world-class, science-informed brain training technology to East Africa. In a region where mental health services are scarce and stigma runs deep, we saw an opportunity to offer something different — a non-invasive, drug-free approach to wellness that empowers individuals to optimize their own minds.
                 </p>
                 <p className="text-base sm:text-lg text-white/60 leading-relaxed">
-                  As Rwanda&apos;s first NeurOptimal® center, we are more than a wellness space. We are a movement — dedicated to shifting the conversation around mental health from treatment to prevention, from limitation to limitless potential.
+                  As Rwanda&apos;s first NeurOptimal center, we are more than a wellness space. We are a movement — dedicated to shifting the conversation around mental health from treatment to prevention, from limitation to limitless potential.
                 </p>
               </div>
             </div>
@@ -195,12 +195,12 @@ export default function AboutPage() {
               <TimelineItem
                 year="Training"
                 title="Certified in Canada"
-                description="Completing advanced NeurOptimal® neurofeedback certification in Canada, gaining the expertise to bring this transformative technology to Rwanda."
+                description="Completing advanced NeurOptimal neurofeedback certification in Canada, gaining the expertise to bring this transformative technology to Rwanda."
               />
               <TimelineItem
                 year="Founding"
                 title="WiCare NeurOptimal Center Opens"
-                description="Rwanda's first dedicated NeurOptimal® center opens its doors in Kigali — a pioneer in non-invasive brain training and preventive mental health care in the region."
+                description="Rwanda's first dedicated NeurOptimal center opens its doors in Kigali — a pioneer in non-invasive brain training and preventive mental health care in the region."
               />
               <TimelineItem
                 year="Today"
@@ -264,8 +264,8 @@ export default function AboutPage() {
                   },
                   {
                     icon: <Award className="w-4 h-4 text-brand-gold" />,
-                    title: "NeurOptimal® Certified",
-                    desc: "Certified NeurOptimal® neurofeedback practitioner trained in Canada",
+                    title: "NeurOptimal Certified",
+                    desc: "Certified NeurOptimal neurofeedback practitioner trained in Canada",
                   },
                   {
                     icon: <Building2 className="w-4 h-4 text-brand-gold" />,
@@ -294,7 +294,7 @@ export default function AboutPage() {
 
               <blockquote className="border-l-4 border-brand-gold/40 pl-6 py-2">
                 <p className="text-brand-navy/60 italic text-base leading-relaxed">
-                  &ldquo;I believe that everyone deserves access to tools that help their brain function at its best. NeurOptimal® is that tool — safe, effortless, and transformative.&rdquo;
+                  &ldquo;I believe that everyone deserves access to tools that help their brain function at its best. NeurOptimal is that tool — safe, effortless, and transformative.&rdquo;
                 </p>
               </blockquote>
             </div>

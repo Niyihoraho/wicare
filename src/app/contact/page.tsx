@@ -64,7 +64,7 @@ export default function ContactPage() {
                   Let's Connect.
                 </h2>
                 <p className="text-lg text-brand-navy/60 leading-relaxed">
-                  Whether you're ready to book your first session or just want to learn more about how NeurOptimal® can help you, our team is ready to assist.
+                  Whether you're ready to book your first session or just want to learn more about how NeurOptimal can help you, our team is ready to assist.
                 </p>
               </div>
 

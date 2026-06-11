@@ -88,7 +88,7 @@ export default function HomePage() {
               href="/neurofeedback"
               className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-white border border-gray-200 text-brand-navy font-semibold text-base transition-all duration-300 shadow-sm hover:shadow-md hover:bg-gray-50 hover:border-gray-300"
             >
-              Discover NeurOptimal®
+              Discover NeurOptimal
             </Link>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-brand-cream to-transparent" />
       </section>
 
-      {/* Intro Section — "Why NeurOptimal®?" — Premium Dark Navy */}
+      {/* Intro Section — "Why NeurOptimal?" — Premium Dark Navy */}
       <section className="relative py-24 sm:py-32 bg-brand-navy overflow-hidden">
         {/* Subtle topography texture overlay */}
         <div
@@ -128,7 +128,7 @@ export default function HomePage() {
                   <span className="text-brand-gold">Optimal Flow</span>
                 </h2>
                 <p className="text-base sm:text-lg text-white/60 leading-relaxed max-w-xl">
-                  Using NeurOptimal® is like having a &ldquo;defrag&rdquo; of your hard drive. It acts as a mirror for the brain, providing real-time mathematical feedback that helps it release points of stuckness, self-organize, and function at its natural best.
+                  Using NeurOptimal is like having a &ldquo;defrag&rdquo; of your hard drive. It acts as a mirror for the brain, providing real-time mathematical feedback that helps it release points of stuckness, self-organize, and function at its natural best.
                 </p>
               </div>
 
@@ -218,7 +218,7 @@ export default function HomePage() {
               </span>
               <h2 className="font-display text-4xl sm:text-5xl font-bold text-brand-navy leading-tight">
                 Rwanda&apos;s First <br />
-                NeurOptimal® Center
+                NeurOptimal Center
               </h2>
               <p className="text-lg text-brand-navy/70 leading-relaxed">
                 Located in the heart of Kigali, WiCare NeurOptimal Center is a pioneer wellness and mental health sanctuary. We are dedicated to providing a premium, tranquil environment where clients can easily access dynamic neurofeedback training and preventive self-care.
@@ -226,7 +226,7 @@ export default function HomePage() {
 
               <ul className="space-y-4">
                 {[
-                  "Dynamic Neurofeedback (NeurOptimal®)",
+                  "Dynamic Neurofeedback (NeurOptimal)",
                   "Mental Wellness & Stress Management",
                   "Cognitive Performance & Emotional Wellbeing",
                   "Workplace Wellbeing Programs"
