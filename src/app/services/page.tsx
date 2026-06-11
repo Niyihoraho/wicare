@@ -190,7 +190,7 @@ export default function ServicesPage() {
         title="Our"
         titleAccent="Services"
         subtitle="Comprehensive brain optimization and mental wellness solutions tailored for individuals, families, and organizations in Rwanda."
-        primaryCTA={{ label: "Book a Free Session", href: "/book-session" }}
+        primaryCTA={{ label: "Book Session", href: "/book-session" }}
         secondaryCTA={{ label: "Discover NeurOptimal", href: "/neurofeedback" }}
         backgroundImage="/services-hero.png"
       />
