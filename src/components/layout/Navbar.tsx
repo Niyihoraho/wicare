@@ -3,11 +3,12 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Menu, X, ChevronRight, Lock } from "lucide-react";
+import { Menu, X, ChevronRight, Lock, LogOut } from "lucide-react";
 import { NAV_LINKS } from "@/constants/navigation";
 import { cn } from "@/lib/utils";
+import { logoutAdmin } from "@/actions/auth";
 
-export function Navbar() {
+export function Navbar({ isAdmin }: { isAdmin?: boolean }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   // Lock body scroll when mobile menu is open
@@ -68,14 +69,29 @@ export function Navbar() {
 
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-3">
-              <Link
-                href="/admin/booking"
-                className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 text-brand-navy/60 hover:text-brand-gold bg-gray-50 border border-gray-100 hover:border-brand-gold/30 hover:bg-white"
-                title="Admin Dashboard"
-              >
-                <Lock className="w-4 h-4" />
-                <span className="hidden xl:inline">Admin</span>
-              </Link>
+              {isAdmin && (
+                <>
+                  <Link
+                    href="/admin/booking"
+                    className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 text-brand-navy/60 hover:text-brand-gold bg-gray-50 border border-gray-100 hover:border-brand-gold/30 hover:bg-white"
+                    title="Admin Dashboard"
+                  >
+                    <Lock className="w-4 h-4" />
+                    <span className="hidden xl:inline">Admin</span>
+                  </Link>
+                  <button
+                    onClick={async () => {
+                      await logoutAdmin();
+                      window.location.reload();
+                    }}
+                    className="inline-flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 text-red-500/80 hover:text-red-600 bg-red-50 border border-red-100 hover:border-red-200"
+                    title="Logout"
+                  >
+                    <LogOut className="w-4 h-4" />
+                    <span className="hidden xl:inline">Logout</span>
+                  </button>
+                </>
+              )}
               <Link
                 href="/book-session"
                 className={cn(
@@ -149,25 +165,39 @@ export function Navbar() {
             {/* Mobile CTA */}
             <div
               className={cn(
-                "mt-6 w-full flex flex-col gap-3 transition-all duration-500",
+                "w-full flex flex-col gap-3 mt-8 transition-all duration-300",
                 isMobileMenuOpen
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-4"
               )}
               style={{
                 transitionDelay: isMobileMenuOpen
-                  ? `${NAV_LINKS.length * 60 + 200}ms`
+                  ? `${NAV_LINKS.length * 60 + 100}ms`
                   : "0ms",
               }}
             >
-              <Link
-                href="/admin/booking"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center justify-center gap-2 w-full py-4 rounded-md bg-white/10 text-white font-medium text-lg tracking-wide hover:bg-white/20 transition-colors duration-300 border border-white/20"
-              >
-                <Lock className="w-5 h-5" />
-                Admin
-              </Link>
+              {isAdmin && (
+                <>
+                  <Link
+                    href="/admin/booking"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-base font-semibold transition-all duration-300 bg-white/5 text-white hover:bg-white/10"
+                  >
+                    <Lock className="w-5 h-5" />
+                    Admin Dashboard
+                  </Link>
+                  <button
+                    onClick={async () => {
+                      await logoutAdmin();
+                      window.location.reload();
+                    }}
+                    className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl text-base font-semibold transition-all duration-300 bg-red-500/10 text-red-400 hover:bg-red-500/20"
+                  >
+                    <LogOut className="w-5 h-5" />
+                    Logout
+                  </button>
+                </>
+              )}
               <Link
                 href="/book-session"
                 onClick={() => setIsMobileMenuOpen(false)}

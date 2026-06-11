@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { NAV_LINKS } from "@/constants/navigation";
 import { SocialLinks } from "@/components/ui/SocialLinks";
+import { AdminLoginModal } from "@/components/ui/AdminLoginModal";
 
 export function Footer() {
   return (
@@ -8,9 +9,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="flex flex-col items-center md:items-start gap-3">
           <div className="flex items-center gap-2">
-            <span className="font-display text-xl font-bold tracking-wide text-brand-cream">
-              WI CARE
-            </span>
+            <AdminLoginModal />
           </div>
           <p className="text-white/40 text-xs">
             © {new Date().getFullYear()} WiCare NeurOptimal® Center. All rights
