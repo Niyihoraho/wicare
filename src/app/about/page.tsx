@@ -142,7 +142,7 @@ export default function AboutPage() {
         title="Pioneering Wellness"
         titleAccent="in Rwanda."
         subtitle="WiCare NeurOptimal Center is Rwanda's first dedicated neurofeedback center — a sanctuary for brain optimization, mental wellness, and personal transformation in the heart of Kigali."
-        primaryCTA={{ label: "Book a Free Intro Session", href: "/book-session" }}
+        primaryCTA={{ label: "Book Intro Session", href: "/book-session" }}
         secondaryCTA={{ label: "Explore NeurOptimal®", href: "/neurofeedback" }}
         backgroundImage="/wicare-peace.png"
       />
@@ -182,11 +182,10 @@ export default function AboutPage() {
 
             {/* Right — Timeline */}
             <div
-              className={`transition-all duration-1000 delay-300 ${
-                isVisible
+              className={`transition-all duration-1000 delay-300 ${isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-8"
-              }`}
+                }`}
             >
               <TimelineItem
                 year="The Beginning"

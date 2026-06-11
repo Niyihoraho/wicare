@@ -48,15 +48,13 @@ function FAQItem({
           {question}
         </span>
         <ChevronDown
-          className={`w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-300 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`w-5 h-5 text-brand-gold flex-shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""
+            }`}
         />
       </button>
       <div
-        className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="px-6 pb-5 text-brand-navy/60 text-sm leading-relaxed border-t border-gray-100 pt-4">
           {answer}
@@ -152,7 +150,7 @@ export default function NeurofeedbackPage() {
         title="Discover"
         titleAccent="NeurOptimal®"
         subtitle="Advanced dynamical neurofeedback — a natural mirror for your brain. Non-invasive, drug-free, and effortless brain training technology trusted by millions of client hours worldwide."
-        primaryCTA={{ label: "Book a Free Intro Session", href: "/book-session" }}
+        primaryCTA={{ label: "Book Intro Session", href: "/book-session" }}
         secondaryCTA={{
           label: "Contact on WhatsApp",
           href: "https://wa.me/250788000000",

@@ -21,7 +21,7 @@ interface CTASectionProps {
 export function CTASection({
   heading = "Ready to Transform Your Life?",
   description = "Experience the effortless, non-invasive power of NeurOptimal® neurofeedback. Book your free introductory session today and see how self-regulation can help you unlock your best self.",
-  primaryCTA = { label: "Book a Free Intro Session", href: "/book-session" },
+  primaryCTA = { label: "Book Intro Session", href: "/book-session" },
   secondaryCTA = {
     label: "Contact on WhatsApp",
     href: CONTACT.whatsappUrl,

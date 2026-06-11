@@ -51,9 +51,8 @@ export default function HomePage() {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-20">
           {/* Main Headline — BlackPenEdu style: bold first line, accent color second line */}
           <h1
-            className={`mt-8 sm:mt-10 transition-all duration-700 delay-150 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-            }`}
+            className={`mt-8 sm:mt-10 transition-all duration-700 delay-150 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+              }`}
           >
             <span className="block font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-brand-navy leading-[1.05] tracking-tight">
               Train Your Brain.
@@ -65,9 +64,8 @@ export default function HomePage() {
 
           {/* Subtitle */}
           <p
-            className={`mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-brand-navy/60 max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-300 ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-            }`}
+            className={`mt-6 sm:mt-8 text-base sm:text-lg md:text-xl text-brand-navy/60 max-w-2xl mx-auto leading-relaxed transition-all duration-700 delay-300 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+              }`}
           >
             Advanced brain training for everyone. Experience natural self-regulation,
             greater resilience, and peak cognitive performance with a system that matches
@@ -76,15 +74,14 @@ export default function HomePage() {
 
           {/* CTA Buttons */}
           <div
-            className={`mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-[450ms] ${
-              isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-            }`}
+            className={`mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-[450ms] ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+              }`}
           >
             <Link
               href="/book-session"
               className="inline-flex items-center justify-center px-8 py-4 rounded-md bg-brand-gold text-brand-navy font-semibold text-base transition-all duration-300 shadow-sm hover:shadow-md hover:bg-brand-gold-light"
             >
-              Book a Free Intro Session
+              Book Intro Session
             </Link>
 
             <Link
@@ -117,7 +114,7 @@ export default function HomePage() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
-            
+
             {/* Left side: Text & Pillars */}
             <div className="lg:col-span-6 space-y-8">
               {/* Section label */}
@@ -148,7 +145,7 @@ export default function HomePage() {
                     Used from toddlers to our oldest citizens, by the sick and the well, and by those looking to excel. There are no circumstances that preclude its use.
                   </p>
                 </div>
-                
+
                 <div className="p-5 rounded-lg bg-white/[0.04] border border-white/[0.08] hover:border-brand-gold/30 transition-all duration-300">
                   <div className="w-9 h-9 rounded-md bg-brand-gold/10 flex items-center justify-center mb-3">
                     <svg className="w-4.5 h-4.5 text-brand-gold" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor">
@@ -226,7 +223,7 @@ export default function HomePage() {
               <p className="text-lg text-brand-navy/70 leading-relaxed">
                 Located in the heart of Kigali, WiCare NeurOptimal Center is a pioneer wellness and mental health sanctuary. We are dedicated to providing a premium, tranquil environment where clients can easily access dynamic neurofeedback training and preventive self-care.
               </p>
-              
+
               <ul className="space-y-4">
                 {[
                   "Dynamic Neurofeedback (NeurOptimal®)",
@@ -297,7 +294,7 @@ export default function HomePage() {
                 className="w-[85vw] sm:w-[380px] shrink-0 snap-center bg-white/[0.03] border border-white/[0.08] p-4 rounded-2xl hover:bg-white/[0.05] hover:border-brand-gold/30 transition-all duration-300 relative group flex flex-col"
               >
                 {/* Video Thumbnail */}
-                <div 
+                <div
                   className="relative w-full aspect-video rounded-xl overflow-hidden mb-6 cursor-pointer"
                   onClick={() => setActiveVideo(video)}
                 >
@@ -323,10 +320,10 @@ export default function HomePage() {
                   <p className="text-white/60 text-sm leading-relaxed mb-4 flex-grow">
                     {video.description}
                   </p>
-                  
+
                   {/* Action */}
                   <div className="mt-auto pt-4 border-t border-white/10">
-                    <button 
+                    <button
                       onClick={() => setActiveVideo(video)}
                       className="text-brand-gold text-sm font-semibold hover:text-brand-gold-light transition-colors flex items-center gap-2"
                     >
@@ -401,7 +398,7 @@ export default function HomePage() {
                   <p className="text-brand-navy/60 text-sm leading-relaxed mb-6 flex-grow">
                     {blog.excerpt}
                   </p>
-                  
+
                   {/* Action */}
                   <div className="mt-auto pt-4 border-t border-gray-100">
                     <Link href={`/blog/${blog.slug}`} className="text-brand-gold text-sm font-semibold hover:text-brand-gold-light transition-colors flex items-center gap-2">
@@ -415,7 +412,7 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          
+
           {/* View More Blogs Button */}
           <div className="mt-12 text-center">
             <Link
@@ -441,7 +438,7 @@ export default function HomePage() {
       {activeVideo && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/90 backdrop-blur-sm">
           <div className="relative w-full max-w-4xl bg-black rounded-xl overflow-hidden shadow-2xl ring-1 ring-white/20">
-            <button 
+            <button
               onClick={() => setActiveVideo(null)}
               className="absolute top-4 right-4 z-10 p-2 bg-black/50 hover:bg-black/80 text-white rounded-full transition-colors"
             >
@@ -449,10 +446,10 @@ export default function HomePage() {
             </button>
             <div className="aspect-video w-full bg-black flex items-center justify-center">
               {activeVideo.videoUrl ? (
-                <video 
-                  src={activeVideo.videoUrl} 
-                  controls 
-                  autoPlay 
+                <video
+                  src={activeVideo.videoUrl}
+                  controls
+                  autoPlay
                   className="w-full h-full object-contain"
                 />
               ) : (
