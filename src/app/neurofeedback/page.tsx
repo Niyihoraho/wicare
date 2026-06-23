@@ -153,7 +153,7 @@ export default function NeurofeedbackPage() {
         primaryCTA={{ label: "Book Intro Session", href: "/book-session" }}
         secondaryCTA={{
           label: "Contact on WhatsApp",
-          href: "https://wa.me/250788000000",
+          href: "https://wa.me/250784443729",
           external: true,
         }}
         backgroundImage="/neurofeedback-hero.png"

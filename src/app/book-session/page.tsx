@@ -81,7 +81,7 @@ export default function BookSessionPage() {
               </p>
               
               <a 
-                href="https://wa.me/250788000000" 
+                href="https://wa.me/250784443729" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-[#25D366] text-white font-semibold transition-all hover:bg-[#20bd5a] w-full sm:w-auto shadow-sm"
@@ -165,9 +165,9 @@ export default function BookSessionPage() {
                     className="w-full px-4 py-3 rounded-md border border-gray-200 bg-gray-50 focus:bg-white focus:ring-2 focus:ring-brand-gold/50 outline-none text-brand-navy/60"
                   >
                     <option value="" disabled>Select Session Type</option>
-                    <option value="First Time Intro Session">First Time Intro Session</option>
-                    <option value="Standard Single Session">Standard Single Session</option>
-                    <option value="Consultation Only">Consultation Only</option>
+                    <option value="Single Standard 33'">Single Standard 33&apos; (33 min)</option>
+                    <option value="Double Standard 66' (back to back)">Double Standard 66&apos; — Back to Back</option>
+                    <option value="Double Standard 66' (morning & evening)">Double Standard 66&apos; — Morning &amp; Evening</option>
                   </select>
                   
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

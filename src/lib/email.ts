@@ -15,7 +15,7 @@ const transporter = nodemailer.createTransport({
 const FROM_EMAIL = process.env.SMTP_FROM || `"Wicare Bookings" <${process.env.SMTP_USER}>`;
 
 // The base URL for logo loading. In production, set NEXT_PUBLIC_APP_URL.
-const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://wicare.rw";
+const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://wicare.com";
 
 // A reusable email wrapper to enforce the brand design pattern
 function generateEmailHtml(title: string, contentHtml: string) {

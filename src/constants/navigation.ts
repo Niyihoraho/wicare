@@ -13,10 +13,8 @@ export const NAV_LINKS: NavLink[] = [
 ];
 
 export const SOCIAL_LINKS = {
-  instagram: "https://www.instagram.com/wicarecenter",
-  facebook: "https://www.facebook.com/wicarecenter",
-  linkedin: "https://www.linkedin.com/company/wicarecenter",
-  twitter: "https://x.com/wicarecenter",
-  youtube: "https://www.youtube.com/@wicarecenter",
-  tiktok: "https://www.tiktok.com/@wicarecenter",
+  instagram: "https://www.instagram.com/wicare.neuroptimal",
+  facebook: "https://www.facebook.com/share/1GXVc4h1VT/",
+  tiktok: "https://www.tiktok.com/@wicare.neuroptimal",
+  whatsapp: "https://whatsapp.com/channel/0029VbDIUHRKLaHlknEyEu3x",
 };
