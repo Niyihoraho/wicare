@@ -35,6 +35,7 @@ export function Navbar({ isAdmin }: { isAdmin?: boolean }) {
                   src="/logo.png"
                   alt="WiCare NeurOptimal Center"
                   fill
+                  sizes="48px"
                   className="object-contain"
                   priority
                 />

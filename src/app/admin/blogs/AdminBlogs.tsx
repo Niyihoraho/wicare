@@ -267,7 +267,7 @@ export default function AdminBlogs({ initialBlogs }: { initialBlogs: BlogPost[] 
                     <div key={blog.id} className="border border-gray-200 rounded-xl p-4 group bg-gray-50 hover:bg-white hover:shadow-sm transition-all">
                       <div className="flex gap-4 items-center">
                         <div className="relative w-32 aspect-video rounded-lg overflow-hidden flex-shrink-0">
-                          <Image src={blog.image} alt={blog.title} fill className="object-cover" />
+                          <Image src={blog.image} alt={blog.title} fill sizes="(max-width: 640px) 100vw, 300px" className="object-cover" />
                         </div>
                         <div className="flex-grow">
                           <div className="flex items-center gap-2 mb-1">

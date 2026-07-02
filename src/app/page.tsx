@@ -256,6 +256,7 @@ export default function HomePage() {
                   src="/wicare-center.png"
                   alt="WiCare NeurOptimal Center Kigali"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -302,6 +303,7 @@ export default function HomePage() {
                     src={video.thumbnail}
                     alt={video.title}
                     fill
+                    sizes="(max-width: 640px) 85vw, 380px"
                     className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-brand-navy/40 group-hover:bg-brand-navy/20 transition-colors duration-300 flex items-center justify-center">
@@ -375,6 +377,7 @@ export default function HomePage() {
                     src={blog.image}
                     alt={blog.title}
                     fill
+                    sizes="(max-width: 640px) 85vw, 380px"
                     className="object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-brand-navy/5 group-hover:bg-transparent transition-colors duration-300" />

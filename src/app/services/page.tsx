@@ -444,6 +444,7 @@ export default function ServicesPage() {
                     src="/wicare-peace.png"
                     alt="Peaceful wellness environment at WiCare"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 40vw"
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/20 to-transparent" />

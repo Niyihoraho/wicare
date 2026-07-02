@@ -5,9 +5,10 @@ import { ArrowLeft } from "lucide-react";
 import { CTASection } from "@/components/layout/CTASection";
 import { getContentData } from "@/actions/content";
 
-export default async function SingleBlogPage({ params }: { params: { slug: string } }) {
+export default async function SingleBlogPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const data = await getContentData();
-  const blog = data.blogs.find((b) => b.slug === params.slug);
+  const blog = data.blogs.find((b) => b.slug === slug);
 
   if (!blog) {
     notFound();
@@ -60,6 +61,7 @@ export default async function SingleBlogPage({ params }: { params: { slug: strin
               src={blog.image}
               alt={blog.title}
               fill
+              sizes="(max-width: 768px) 100vw, 800px"
               className="object-cover"
               priority
             />

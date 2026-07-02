@@ -245,7 +245,7 @@ export default function AdminVideos({ initialVideos }: { initialVideos: Video[] 
                   {initialVideos.map((video) => (
                     <div key={video.id} className="border border-gray-200 rounded-xl overflow-hidden flex flex-col group">
                       <div className="relative w-full aspect-video bg-gray-100">
-                        <Image src={video.thumbnail} alt={video.title} fill className="object-cover" />
+                        <Image src={video.thumbnail} alt={video.title} fill sizes="(max-width: 640px) 100vw, 300px" className="object-cover" />
                         <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
                           {video.duration}
                         </div>
