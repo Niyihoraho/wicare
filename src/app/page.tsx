@@ -8,6 +8,21 @@ import { CTASection } from "@/components/layout/CTASection";
 import { SectionLabel } from "@/components/ui/SectionLabel";
 import { getContentData, Video, BlogPost } from "@/actions/content";
 
+function getEmbedUrl(url: string) {
+  if (!url) return null;
+  // YouTube
+  const ytMatch = url.match(/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i);
+  if (ytMatch && ytMatch[1]) {
+    return `https://www.youtube.com/embed/${ytMatch[1]}`;
+  }
+  // Vimeo
+  const vimeoMatch = url.match(/(?:vimeo\.com\/)(\d+)/i);
+  if (vimeoMatch && vimeoMatch[1]) {
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}`;
+  }
+  return null;
+}
+
 export default function HomePage() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [videos, setVideos] = useState<Video[]>([]);
@@ -299,12 +314,10 @@ export default function HomePage() {
                   className="relative w-full aspect-video rounded-xl overflow-hidden mb-6 cursor-pointer"
                   onClick={() => setActiveVideo(video)}
                 >
-                  <Image
+                  <img
                     src={video.thumbnail}
                     alt={video.title}
-                    fill
-                    sizes="(max-width: 640px) 85vw, 380px"
-                    className="object-cover transform group-hover:scale-105 transition-transform duration-700"
+                    className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-brand-navy/40 group-hover:bg-brand-navy/20 transition-colors duration-300 flex items-center justify-center">
                     <PlayCircle className="w-16 h-16 text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
@@ -449,12 +462,27 @@ export default function HomePage() {
             </button>
             <div className="aspect-video w-full bg-black flex items-center justify-center">
               {activeVideo.videoUrl ? (
-                <video
-                  src={activeVideo.videoUrl}
-                  controls
-                  autoPlay
-                  className="w-full h-full object-contain"
-                />
+                (() => {
+                  const embedUrl = getEmbedUrl(activeVideo.videoUrl);
+                  if (embedUrl) {
+                    return (
+                      <iframe
+                        src={embedUrl}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    );
+                  }
+                  return (
+                    <video
+                      src={activeVideo.videoUrl}
+                      controls
+                      autoPlay
+                      className="w-full h-full object-contain"
+                    />
+                  );
+                })()
               ) : (
                 <div className="text-white/60 flex flex-col items-center">
                   <PlayCircle className="w-16 h-16 mb-4 opacity-50" />
